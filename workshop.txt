@@ -1,0 +1,6 @@
+version=1
+id=2891303664
+title=fingerPrint
+description=Strictly for debugging purposes, modifies the print() function to include the name of mod sending it.
+tags=Build 40;Build 41;Misc
+visibility=public

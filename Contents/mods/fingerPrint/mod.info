@@ -1,0 +1,5 @@
+name=fingerPrint
+poster=poster.png
+icon=icon.png
+id=fingerPrint
+description= Strictly for debugging purposes, modifies the print() function to include the name of mod sending it.
