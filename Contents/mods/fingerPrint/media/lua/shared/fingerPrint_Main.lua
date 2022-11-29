@@ -11,14 +11,17 @@ function _G.print(...)
 			if s then
 				local modFile = s:match(".* | MOD: (.*)")
 				if modFile and modFile~="fingerPrint" then
-					printText = "\["..modFile.."\] "
+					printText = "\["..modFile.."\]"
 				end
 			end
 		end
 	end
 
-	print_original(printText,...)
-
+	if printText then
+		print_original(printText,...)
+	else
+		print_original(...)
+	end
 end
 
 
