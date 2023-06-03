@@ -1,11 +1,11 @@
 version=1
 id=2891303664
 title=fingerPrint
-description=Strictly for debugging purposes, modifies the print() function to include the name of mod sending it.
+description=[h3]Strictly for debugging purposes, modifies the print() function to include the name of mod sending it.[/h3]
 description=
 description=This mod is currently packaged with-in ErrorMagnifier. It is recommended to use that mod instead as it offers better debugging opportunities.
 description=
-description=[url=https://ko-fi.com/chuckleberryfinn][img]https://i.imgur.com/GxZ38nz.png[/img] [b]Consider supporting Chuck![/b][/url] [url=https://www.patreon.com/bePatron?u=17239488][img]https://raw.githubusercontent.com/ChuckTheSheep/Vanilla-Weapons-Expanded/main/Contents/mods/VanillaWeaponsExpanded/patreon/Patreon%20Logo.png[/img][/url]
+description=[url=https://ko-fi.com/chuckleberryfinn][img]https://raw.githubusercontent.com/ChuckTheSheep/chuckImages/main/kofi.png[/img][/url] [url=https://www.patreon.com/bePatron?u=17239488][img]https://raw.githubusercontent.com/ChuckTheSheep/chuckImages/main/patreon.png[/img][/url]
 description=
 description=[h3]Copyright 2023 Chuckleberry Finn. This item is not authorized for posting on Steam, except under the Steam account named Chuckleberry Finn.[/h3]
 tags=Build 40;Build 41;Misc
