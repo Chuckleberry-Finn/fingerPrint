@@ -2,16 +2,22 @@ local print_original = print
 function _G.print(...)
 
 	local coroutine = getCurrentCoroutine()
-	local count = getCallframeTop(coroutine)
 	local printText
-	for i= count - 1, 0, -1 do
-		local o = getCoroutineCallframeStack(coroutine,i)
-		if o ~= nil then
-			local s = KahluaUtil.rawTostring2(o)
-			if s then
-				local modFile = s:match(".* | MOD: (.*)")
-				if modFile and modFile~="fingerPrint" then
-					printText = "\["..modFile.."\]"
+	if coroutine then
+		local count = getCallframeTop(coroutine)
+		for i= count - 1, 0, -1 do
+			---@type LuaCallFrame
+			local luaCallFrame = getCoroutineCallframeStack(coroutine,i)
+			if luaCallFrame ~= nil and luaCallFrame then
+				local fileDir = getFilenameOfCallframe(luaCallFrame)
+				if fileDir then
+					local modInfo = getModInfo(fileDir:match("(.-)media/"))
+					if modInfo then
+						local modID = modInfo:getId()
+						if modID and modID~="fingerPrint" then
+							printText = "\["..modID.."\]"
+						end
+					end
 				end
 			end
 		end
